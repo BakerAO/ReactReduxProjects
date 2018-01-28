@@ -9,6 +9,8 @@ import reducers from './reducers';
 import PostsIndex from './blog/components/posts_index';
 import PostsNew from './blog/components/posts_new';
 import PostsShow from './blog/components/posts_show';
+import YoutubePage from './youtube/youtube_page.js';
+import HomePage from './home_page.js';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
@@ -20,6 +22,8 @@ ReactDOM.render(
                     <Route path="/posts/new" component={PostsNew} />
                     <Route path="/posts/:id" component={PostsShow} />
                     <Route path="/posts/" component={PostsIndex} />
+                    <Route path="/youtube" component={YoutubePage} />
+                    <Route path="/" component={HomePage} />
                 </Switch>
             </div>
         </BrowserRouter>
