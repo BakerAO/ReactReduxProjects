@@ -56,3 +56,33 @@ form a {
 .list-group-item:hover {
     background-color: #eee;
 }
+
+#divSquare {
+    float: left;
+    position: relative;
+    width: 30%;
+    padding-bottom: 30%;
+    margin: 1.66%;
+    background-color: #1f9;
+    overflow: hidden;
+}
+
+#divContent {
+    position: absolute;
+    text-align: center;
+    height: 80%;
+    width: 90%;
+    padding: 10% 5%;
+}
+
+#divTable{
+    display:table;
+    height:100%;
+    width:100%;
+}
+#divTableCell{
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+    width:100%;
+}
