@@ -16,7 +16,7 @@ export default class YoutubePage extends Component {
             selectedVideo: null
         };
 
-        this.videoSearch('dogs');
+        this.videoSearch('');
     }
     
     videoSearch(term){

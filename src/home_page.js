@@ -30,15 +30,17 @@ class HomePage extends Component {
                     </div>
                 </Link>
 
-                <div id="divSquare">
-                    <div id="divContent">
-                        <div id="divTable">
-                            <div id="divTableCell">
-                                Weather
+                <Link to="/weather/" >
+                    <div id="divSquare">
+                        <div id="divContent">
+                            <div id="divTable">
+                                <div id="divTableCell">
+                                    Weather
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </Link>
                 
             </div>
         );

@@ -9,7 +9,8 @@ import reducers from './reducers';
 import PostsIndex from './blog/components/posts_index';
 import PostsNew from './blog/components/posts_new';
 import PostsShow from './blog/components/posts_show';
-import YoutubePage from './youtube/youtube_page.js';
+import YoutubePage from './youtube/youtube_page';
+import WeatherApp from './weather/components/weather_app';
 import HomePage from './home_page.js';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
@@ -22,7 +23,8 @@ ReactDOM.render(
                     <Route path="/posts/new" component={PostsNew} />
                     <Route path="/posts/:id" component={PostsShow} />
                     <Route path="/posts/" component={PostsIndex} />
-                    <Route path="/youtube" component={YoutubePage} />
+                    <Route path="/youtube/" component={YoutubePage} />
+                    <Route path="/weather/" component={WeatherApp} />
                     <Route path="/" component={HomePage} />
                 </Switch>
             </div>
