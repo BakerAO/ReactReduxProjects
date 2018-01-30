@@ -23,7 +23,7 @@ class HomePage extends Component {
                         <div id="divContent">
                             <div id="divTable">
                                 <div id="divTableCell">
-                                    Fast Youtube
+                                    Quick Youtube
                                 </div>
                             </div>
                         </div>

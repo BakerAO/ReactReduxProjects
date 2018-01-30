@@ -22,6 +22,6 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         contentBase: './',
-        disableHostCheck: true
+        disableHostCheck: false
     }
 };
