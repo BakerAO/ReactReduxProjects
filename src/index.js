@@ -12,6 +12,7 @@ import PostsShow from './blog/components/posts_show';
 import YoutubePage from './youtube/youtube_page';
 import WeatherApp from './weather/components/weather_app';
 import HomePage from './home_page.js';
+import NavBar from './nav';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
@@ -19,6 +20,7 @@ ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
         <BrowserRouter>
             <div>
+                <NavBar />
                 <Switch>
                     <Route path="/posts/new" component={PostsNew} />
                     <Route path="/posts/:id" component={PostsShow} />
